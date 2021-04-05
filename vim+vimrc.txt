@@ -1,0 +1,6 @@
+  1 set number
+  2 set expandtab
+  3 set tabstop=2
+  4
+  5 set hlsearch
+  6 set incsearch
