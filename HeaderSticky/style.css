@@ -1,0 +1,140 @@
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 700;
+	font-size: 35px;
+	line-height: 20px;
+	background: orange;
+}
+header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	color: rgba(125, 22, 221, 0.801);
+	position: fixed;
+	top: 15px;
+	left: 12.5%;
+	height: 200px;
+	width: 75%;
+	border: none;
+	border-radius: 15px;
+	background: black;
+}
+.header__logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 20%;
+}
+.header__block {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 45%;
+}
+.header__commercial {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 70%;
+	width: 100%;
+}
+.header__link {
+	height: 30%;
+	width: 100%;
+}
+.header__link ul {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+.header__link ul li a {
+	position: relative;
+	color: rgba(125, 22, 221, 0.801);
+	text-decoration: none;
+}
+.header__link ul li a{
+	position: relative;
+}
+.header__link ul li a:hover::before {
+	position: absolute;
+	content: '';
+	bottom: -30px;
+	left: 0;
+	width: 100%;
+	height: 5px;
+	background: #FFFFFF;
+}
+.header__link ul li a:hover {
+	color: #FFFFFF;
+}
+.header__phone {
+	display: flex;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 35px;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 35%;
+}
+.header__phone:hover {
+	color: #FFFFFF;
+}
+header.sticky {
+	display: flex;
+	justify-content: center;
+	top: 0;
+	left: 0;
+	border-radius: 0;
+	height: 80px;
+	width: 100%;
+}
+header.sticky  .header__logo {
+	display: none;
+}
+header.sticky .header__block {
+	width: 40%;
+}
+header.sticky .header__commercial {
+	display: none;
+}
+header.sticky .header__link {
+	display: flex;
+	height: 100%;
+}
+header.sticky .header__link ul {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+}
+header.sticky .header__link ul li a:hover::before {
+	position: absolute;
+	content: '';
+	bottom: -20px;
+	left: 0;
+	width: 100%;
+	height: 5px;
+	background: #FFFFFF;
+}
+header.sticky .header__phone {
+	display: flex;
+	height: 100%;
+}
+
+.banner {
+	margin: 0 auto;
+	height: 100vh;
+	width: 75%;
+	background: rgb(20, 185, 20);
+}
+footer {
+	height: 80px;
+	width: 100%;
+	background: rgb(133, 210, 246);
+}

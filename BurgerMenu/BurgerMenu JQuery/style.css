@@ -1,0 +1,80 @@
+.burger-menu{
+	position: relative;
+	max-width: 1024px;
+	padding: 10px;
+	margin: 0px auto;
+	background: yellowgreen;
+}
+
+.menu-items{
+	display: none;
+	position: absolute;
+	background: yellowgreen;
+	width: 100%;
+	margin-left: -10px;
+}
+.menu-items ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.menu-items ul li{
+	display: block;
+}
+.menu-items ul li a{
+	display: block;
+	padding: 10px 15px;
+	color: blue;
+	text-decoration: none;
+}
+
+.menu-toggle {
+	padding: 10px 15px;
+	cursor: pointer;
+	display: block;
+	width: 25px;
+	height: 25px;
+}
+
+.icon div {
+	width: 40px;
+	height: 4px;
+	transform: translate(-50%, -50%);
+	background: orange;
+	transition: 0.5s;
+	display: inline-block;
+	margin-left: 12px;
+}
+.icon div:before,
+.icon div:after {
+	content: '';
+	width: 40px;
+	height: 4px;
+	position: absolute;
+	background: orange;
+	transition: 0.5s;
+}
+.icon div:before {
+	top: -16px;
+}
+.icon div:after {
+	top: 16px;
+}
+
+.icon.active div  {
+	background: rgba(0, 0, 0, 0);
+}
+.icon.active ::before {
+	top: 0;
+	transform: rotate(45deg);
+}
+.icon.active ::after {
+	top: 0;
+	transform: rotate(135deg);
+}
+.logo {
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	color:aliceblue; 
+}
